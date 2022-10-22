@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+
+
+.row{
+    display: flex;
+    
+}
+
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-center{
+    justify-content: center;
+}
+
+
+.space-end{
+    justify-content: end;
+}
+
+.col-1{
+   width: 8.333333%; 
+}
+
+.col-2{
+    width: 16.666666%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33333333%;
+}
+
+.col-5{
+    width: 41.66666666%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+
+.col-7{
+    width: 58.3333333333%;
+}
+
+
+.col-8{
+    width: 66.6666666666666%;
+}
+
+
+
+.col-9{
+    width: 74.333333333333%;
+}
+
+
+.col-10{
+    width: 83.33333333333%;
+}
+
+
+
+.col-11{
+    width:91.66666666% ;
+}
+
+
+
+.col-12{
+    width: 100%;
+}
+
+
+.sent-message{
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    max-width: 75%;
+}
+
+.income-message{
+    background-color: #b8b8b8;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 30px;
+    max-width: 75%;
+}
+
+.bloc-message{
+    margin-bottom: 15px;
+}
+
+
+/**  phone */
+@media screen  and  ( max-width :400px )  {
+   .row{
+    display: block;
+   }
+
+   .col{
+    width: 100% !important;
+   }
+}
+
+
+/**/
+@media screen  and  ( min-width :400px ) and ( max-width:800px ) {
+    .col{
+        background-color: red;
+    }
+ }

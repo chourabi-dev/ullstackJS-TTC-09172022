@@ -1,0 +1,44 @@
+.intro{
+    min-height: 100vh;
+}
+
+.intro > .container{
+    padding-top: 96px;
+}
+
+.intro-text{
+    padding-top: 48px;
+}
+
+.intro-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#features{
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+
+.feature-bloc{
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+
+
+.feature-bloc > .icon{
+    width: 80px;
+    height: 80px;
+    background-color: #73b6eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+
+.feature-bloc > .icon > i{
+    font-size: 32px;
+    color: white;
+}

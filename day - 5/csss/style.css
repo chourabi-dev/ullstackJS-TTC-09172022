@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+@keyframes translatebox {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+    
+}
+
+
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #0000009e;
+    top: 0;
+}
+
+
+.loader > .loader-box{
+    width: 100px;
+    display: flex;
+}
+
+
+.loader > .loader-box > div{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+    background-color: orange;
+}
+
+.sqr1{
+    animation-name: translatebox;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  
+}
+
+.sqr2{
+    animation-name: translatebox;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+
+.sqr3{
+    animation-name: translatebox;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+.sqr4{
+    animation-name: translatebox;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+}

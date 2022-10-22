@@ -1,0 +1,63 @@
+.top-block{
+    width: 500px;
+    margin: 0;
+    margin: auto;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+
+
+
+.feed > .feed-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.feed > .feed-header > .bloc-user{
+    display: flex; 
+}
+
+.feed > .feed-header > .bloc-user > .avatar > img{
+    width: 80px;
+}
+
+ 
+
+.user-info{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.user-name{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.feed-date{
+    color: #a8a8a8;
+}
+
+.feed-content > p{
+    color: #a8a8a8;
+}
+
+
+.feed-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.feed{
+    margin-bottom: 25px;
+    border: 1px solid #c1c1c1;
+    padding: 20px;
+    border-radius: 7px;
+}

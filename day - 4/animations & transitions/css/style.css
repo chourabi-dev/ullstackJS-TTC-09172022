@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+.banner{
+    
+    background-color: orange;
+    padding: 25px;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+
+.banner > h3{
+    transition: color 0.3s ease-in-out;
+
+}
+
+
+.banner:hover{
+    background-color: white;
+    border: 1px solid orange;
+}
+
+.banner:hover  > h3{
+    color: orange;
+}
+
+
+
+
+/*
+<div class="link">
+<div class="menu">
+    Profile
+</div>
+
+<div class="sub-menu">
+    <ul>
+        <li>
+*/
+
+nav{
+    background-color: #cddc39;
+    display: flex;
+}
+
+.link{
+    width: fit-content;
+    position: relative;
+}
+
+.link > .sub-menu{
+    
+    position: absolute;
+    width: 173px;
+    background-color: #ffc107;
+    bottom: -400px;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out ;
+}
+
+
+.link > .menu{
+    padding: 15px;
+    background-color: white;
+    width: fit-content;
+}
+
+.link:hover > .sub-menu {
+    
+    opacity: 1;
+    height: 400px;
+}
+
+
+
+@keyframes bgchange {
+    0% { background-color: blue; }
+
+    25% { background-color: red; } 
+    50% {  background-color: yellow; } 
+    75% {  background-color: green; }
+
+
+    100% {  background-color: blue; }
+}
+
+
+.square{
+    width: 100px;
+    height: 100px; 
+    background-color: blue;
+    animation-name: bgchange;
+    animation-iteration-count: infinite;
+
+    animation-duration: 3s;
+}
+
+
+
+
+@keyframes loader {
+    0% {      transform: rotateZ(0deg); }
+    
+    100% {      transform: rotateZ(360deg); }
+}
+
+
+
+.loader{
+    height: 30px;
+    width: 30px;
+    border: 5px solid;
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: yellow;
+    border-left-color: green;
+    border-radius: 50%;
+
+    animation-name: loader;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}

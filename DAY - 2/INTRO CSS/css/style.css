@@ -1,0 +1,89 @@
+/*
+selector {
+    key : value;
+    key : value;
+    key : value;
+    key : value;
+    key : value;
+    
+}
+*/
+
+
+/*  tagname   "le nom de la balise"   !!! */
+
+
+div > h3 {
+    color: blue;
+}
+
+div > h3 {
+    color: green;
+}
+
+
+
+#custom-title{
+    color: red;
+    font-size: 35px;
+}
+
+h3{
+    color: yellow;
+}
+
+
+.p-bold{
+    font-weight: bold;
+}
+
+.p-red{
+    color: #a33838;
+}
+
+
+input[type="text"] {
+    color: red;
+}
+
+/*********************************************************************************/
+
+
+.banner > div > p{
+    color: green;
+}
+
+
+.banner.top-bloc > div > p{
+    font-size: 30px;
+}
+
+
+.block h3{
+    color: red;
+}
+
+
+
+
+.list > li:first-child{
+    font-weight: bold;
+}
+
+
+.list > li:last-child{
+    font-weight: bold;
+}
+
+.list > li:nth-child(2){
+    color: blue;
+}
+
+
+.strip-list>li:nth-child(2n){
+    color: blue;
+}
+
+.strip-list>li:nth-child(2n + 1){
+    color: #a33838;
+}
