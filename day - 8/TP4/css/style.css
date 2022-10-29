@@ -1,0 +1,38 @@
+.content{
+    height: 0px;
+    overflow: auto;
+    transition: height 0.3s ease-in-out;
+}
+
+
+
+.super-p.hide > .content{
+    height: 0;
+}
+
+
+.super-p.show > .content{
+    height:100px;
+}
+
+
+.super-p.show > .hide-link{
+    display: block;
+}
+
+
+.super-p.show > .show-link{
+    display: none;
+}
+
+ 
+.super-p.hide > .hide-link{
+    display: none;
+}
+
+
+.super-p.hide > .show-link{
+    display: block;
+}
+
+ 
