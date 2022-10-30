@@ -1,0 +1,26 @@
+.gallery-bloc > img{
+    width: 100%;
+}
+
+.gallery-bloc {
+    position: relative;
+}
+
+
+.gallery-bloc > .gallery-actions{
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery-bloc > .gallery-actions > button{ 
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px 31px;
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+}
