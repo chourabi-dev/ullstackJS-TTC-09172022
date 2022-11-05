@@ -1,0 +1,16 @@
+.bg-navbar-app{
+    background-color: #ffebad;
+}
+
+#app{
+    margin-top: 100px;
+}
+
+.ligne-product-details{
+    display: flex;
+}
+
+.ligne-product-details > .img{
+    width: 250px;
+    margin-right: 15px;
+}
