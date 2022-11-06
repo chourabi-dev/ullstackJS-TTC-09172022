@@ -144,8 +144,6 @@ function maxPrice(){
 }
 
 
-
-
 priceElement.addEventListener("change",function(){
     const value = Number(this.value); 
 
