@@ -1,48 +1,59 @@
-import Contact from "./componenets/Contact";
-import Counter from "./componenets/Counter";
-import LikeButton from "./componenets/LikeButton";
-import SwitchBtn from "./componenets/Switch";
+import React from "react";
+import Parent from "./componenets/Parent";
+import UserItem from "./componenets/UserItem";
+import BlocIntro from "./pages-elements/BlocIntro";
+import FormsPage from "./pages/Forms";
+import HomePage from "./pages/home";
 
-function App() {
+export default class App extends React.Component{
+    constructor(props){
+        super(props);
 
-   
-  return (
-    <div >
-
-
-      {
-        /**
-         *        <ul>
-       
-       <Contact   name="chourabi taher" email="tchourabi@gmail.com"   /> 
-       <Contact   name="chourabi taher 2" email="tchourabi@gmail.com 2"   /> 
-       <Contact   name="chourabi taher 3" email="tchourabi@gmail.com 3"   /> 
-       <Contact   name="chourabi taher 4" email="tchourabi@gmail.com 4"   /> 
-       <Contact   name="chourabi taher 5" email="tchourabi@gmail.com 5"   /> 
-          
-       </ul>
- 
-         */
+        this.state = {
+            users:[
+                { id: 1, fullname:'chourabi taher', email:'tchourabi@gmail.com', phone:'93863732' },
+                { id: 2, fullname:'chourabi taher1', email:'tchourabi@gmail.com', phone:'93863732' },
+                { id: 3, fullname:'chourabi taher2', email:'tchourabi@gmail.com', phone:'93863732' },
+                { id: 4, fullname:'chourabi taher3', email:'tchourabi@gmail.com', phone:'93863732' },
+                { id: 5, fullname:'chourabi taher4', email:'tchourabi@gmail.com', phone:'93863732' },
+                
+            ],
 
 
-
-       
-        
+        }
+    }
 
 
 
 
-      }    
+    render(){
+        return(
+            <div>
+                { /*<h3>Users List:</h3> */ }
+                {
+                /*this.state.users.map((user)=>{ 
+                       return   <UserItem key={ user.id } email={ user.email } phone={ user.phone } fullname={ user.fullname }   />
+                    }
+                    
+                    ) */
+                }
 
 
 
+               { /*  <Parent /> */ }
 
-       <LikeButton likes={ 15 } like={ false } />
-       <LikeButton likes={ 10 } like={ false }  />
-       <LikeButton likes={ 3 } like={ true }  />
 
-    </div>
-  );
+
+               { /* <HomePage /> */ }
+
+
+
+               <FormsPage />
+
+               
+
+
+            </div>
+        );
+    }
 }
-
-export default App;

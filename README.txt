@@ -42,6 +42,16 @@ https://nodejs.org/en/
 
 
 
+1 - CREATE REACT APP 
+
+NPX CREATE-REACT-APP APP_NAME
+
+
+2 - ADD BOOTSTRAP
+
+npm i bootstrap
+
+
 
 
 
