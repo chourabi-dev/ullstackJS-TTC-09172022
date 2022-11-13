@@ -3,7 +3,9 @@ import Parent from "./componenets/Parent";
 import UserItem from "./componenets/UserItem";
 import BlocIntro from "./pages-elements/BlocIntro";
 import FormsPage from "./pages/Forms";
+import Form2Page from "./pages/Forms2";
 import HomePage from "./pages/home";
+import ShoppingList from "./pages/ShppingList";
 
 export default class App extends React.Component{
     constructor(props){
@@ -48,7 +50,7 @@ export default class App extends React.Component{
 
 
 
-               <FormsPage />
+               <ShoppingList />
 
                
 
