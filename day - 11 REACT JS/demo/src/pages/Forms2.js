@@ -111,7 +111,6 @@ export default class Form2Page extends React.Component{
                         </select>
                     </div>
 
-
                     <div className="form-group">
                         <label htmlFor="">Choose products</label>
 
@@ -119,6 +118,8 @@ export default class Form2Page extends React.Component{
                             {
                                 this.state.products.map((p)=>{
                                     return <li key={p.id}>
+
+
                                     <label htmlFor={ 'p-'+p.id } >{ p.name }</label> 
                                     <input id={ 'p-'+p.id } type="checkbox"   onChange={ (event)=>{ 
 

@@ -89,3 +89,43 @@ reportWebVitals();
 
 
 
+/////////////////////////////////////////////////////////////////////
+
+
+** API TESTING **
+https://www.postman.com/downloads/
+
+
+
+///////////////////////////// EXPRESS JS ////////////////////////////////////
+
+init project 
+npm init
+
+https://expressjs.com/
+
+add nodemon
+
+
+npm i -g nodemon
+
+
+
+OVH HOSTING
+
+https://www.ovhcloud.com/fr-tn/web-hosting/web-hosting-tunisia/
+
+
+
+mongo db server
+
+
+https://www.mongodb.com/try/download/community
+
+
+add mongodb to serevr
+
+npm i mongodb
+
+
+
