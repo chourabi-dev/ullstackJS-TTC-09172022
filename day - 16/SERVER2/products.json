@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "637cc5509b63b5b8f48892b5"
+  },
+  "name": "Sony playstation 3",
+  "price": 450,
+  "relaseYear": 2004,
+  "quantity": 80
+},{
+  "_id": {
+    "$oid": "637cc57c5ef7f3fdd2566c6c"
+  },
+  "name": "Thinkpad",
+  "price": 2250,
+  "relaseYear": 1999,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "637cc5a25ef7f3fdd2566c6d"
+  },
+  "name": "Nikon d7",
+  "price": 1700,
+  "relaseYear": 2002,
+  "quantity": 13
+},{
+  "_id": {
+    "$oid": "637cc5e55ef7f3fdd2566c6e"
+  },
+  "name": "Xbox 360",
+  "price": 320,
+  "relaseYear": 1998,
+  "quantity": 20,
+  "category": "Entertainment"
+},{
+  "_id": {
+    "$oid": "637cc6195ef7f3fdd2566c6f"
+  },
+  "name": "Black nike T-shirt",
+  "price": 25,
+  "relaseYear": 2007,
+  "quantity": 2,
+  "category": "Clothing "
+},{
+  "_id": {
+    "$oid": "637cc6265ef7f3fdd2566c70"
+  },
+  "name": "White nike T-shirt",
+  "price": 25,
+  "relaseYear": 2007,
+  "quantity": 4,
+  "category": "Clothing "
+},{
+  "_id": {
+    "$oid": "637cc65d5ef7f3fdd2566c71"
+  },
+  "name": "JVC music player",
+  "price": 259,
+  "relaseYear": 2007,
+  "quantity": 10,
+  "category": "Entertainment "
+}]
