@@ -128,4 +128,16 @@ add mongodb to serevr
 npm i mongodb
 
 
+************************************************* JWT *************************************************
+https://www.npmjs.com/package/jsonwebtoken
+
+add cors to serevr
+
+
+https://www.npmjs.com/package/cors
+
+
+
+
+
 

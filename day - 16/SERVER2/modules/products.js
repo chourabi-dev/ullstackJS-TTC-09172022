@@ -1,7 +1,7 @@
 const { ObjectId } = require("mongodb");
 
 
-const dbURL = "mongodb://localhost:27017";
+const dbURL = "mongodb://127.0.0.1:27017";
 const url = require("url");
 
 
@@ -30,6 +30,7 @@ exports.getProducts = function(req,res){
             res.send({ message:"err db" })
         }
     );
+
 
 
 }
@@ -206,5 +207,81 @@ exports.deleteProductByID = function(req,res){
       );
       
   
+    
+}
+
+
+
+/*
+
+ >   $gt
+
+ >= $gte
+
+ < $lt
+
+
+ <= $lte
+
+
+ and =>  { price: .... , quantirty: ...}
+
+
+ or = >  {  $or :  [    { relaseYear: 2004 } , { relaseYear: 2007  } ,.....   ]  }
+
+
+
+*/
+
+
+
+exports.searchProducts  = function(req,res) {
+
+    const queries = url.parse(req.url,true).query;
+
+    
+    /**
+     *  let arr = []
+
+    const search = { $or : arr  };
+     */
+
+    const search = {   };
+
+
+    if (queries.price != null) {
+        search.price = { $lte : Number(queries.price) }
+    }
+
+
+    if (queries.year != null) {
+        search.relaseYear = Number(queries.year)
+    }
+
+
+ 
+
+    
+    const client = require("mongodb").MongoClient;
+
+
+    client.connect(dbURL).then(
+        (server)=>{
+            const db = server.db("demoapiexpress");
+
+
+            // fetch data from collection
+
+            db.collection("products").find(  search  ).toArray().then((data)=>{
+                res.send(data);
+            }).catch((err)=>{
+                res.send({ message:"err db 2" });
+            })
+        }
+    ).catch(
+        ()=>{
+            res.send({ message:"err db" })
+        }
+    );
     
 }
