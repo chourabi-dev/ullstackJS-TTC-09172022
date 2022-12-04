@@ -46,12 +46,15 @@ exports.insertNewProduct = function(req,res){
     const requestBody = JSON.parse(Buffer.concat(body).toString());
 
 
+    
     if ( requestBody.title != null && requestBody.price != null, requestBody.quantity != null) {
       
       const document = {
-        title:requestBody.title,
+        name:requestBody.title,
         price:requestBody.price,
         quantity:requestBody.quantity,
+        category: requestBody.category,
+        relaseYear: new Date().getFullYear()
         
       }
 
@@ -107,13 +110,13 @@ exports.updateProductByID = function(req,res){
   
       const requestBody = JSON.parse(Buffer.concat(body).toString());
   
-  
-      if ( requestBody.title != null && requestBody.price != null && requestBody.quantity != null && requestBody.id != null) {
-        
+      if ( requestBody.title != null && requestBody.price != null, requestBody.quantity != null) {
+      
         const document = {
-          title:requestBody.title,
+          name:requestBody.title,
           price:requestBody.price,
-          quantity:requestBody.quantity,
+          quantity:requestBody.quantity, 
+          relaseYear: new Date().getFullYear()
           
         }
   

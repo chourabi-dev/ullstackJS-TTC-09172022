@@ -99,10 +99,10 @@ exports.auth = function(req,res){
 
                     var token = jwt.sign({ username: user.username }, 'azertyuytrezazertyuytr14521545145');
 
-                    res.send( { token: token } )
+                    res.send( { success:true, token: token } )
 
                 }else{
-                    res.send({ success:true,  message:"wrong username or password" })
+                    res.send({ success:false,  message:"wrong username or password" })
                 }
 
                  
